@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 안산 디지털 교육 운영교</title>
+<meta name="description" content="2026 안산 관내 AI·디지털 교육 사업 운영교를 지도에서 만나 보세요.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="assets/gradient-bg.css?v=20261123a">
+<link rel="stylesheet" href="assets/style.css?v=20261123a">
+<link rel="stylesheet" href="assets/intro.css?v=20261123a">
+</head>
+<body>
+<!-- 인트로 (Hero Highlight) -->
+<div class="intro hh" id="intro" role="dialog" aria-modal="true" aria-label="2026 안산 디지털 교육 운영교 소개">
+  <div class="hh-dots"></div>
+  <div class="hh-dots-hover"></div>
+  <button type="button" class="intro-skip">건너뛰기</button>
+  <div class="hh-content">
+    <p class="intro-kicker">2026 ANSAN · LINK+X</p>
+    <h1 class="hh-title">AI로 배우고, 디지털로 연결되는 교실.<br>안산의 내일은 <span class="hh-highlight">지금, 우리 학교에서 시작됩니다.</span></h1>
+    <div class="intro-actions"><button type="button" class="intro-go">디지털 교육 운영교 만나기</button></div>
+  </div>
+</div>
+<script src="assets/intro.js?v=20261123a"></script>
+<div class="sky" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">ANSAN <b>Link+X</b></a>
+    <span class="tag">AI·디지털 교육 선도지구</span>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <p class="kicker">2026년도 안산교육지원청</p>
+      <h1>디지털 교육 운영교</h1>
+      <p class="sub">우리 지역 운영교를 만나보세요.</p>
+      <div class="stats" id="stats"></div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:8px">
+    <div class="wrap">
+      <div class="map-card">
+        <div class="legend" id="legend" role="group" aria-label="사업 유형 선택"></div>
+        <div id="map"></div>
+        <div class="map-foot">
+          <span>점을 누르면 학교 소개로 이동해요 · 여러 색이 섞인 점은 여러 사업에 참여하는 학교예요</span>
+          <span>마우스 휠·+ − 버튼으로 확대 · 끌어서 이동 · 확대하면 학교 이름이 보여요</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-title">
+        <h2>유형별 운영교</h2>
+        <p>학교 이름을 누르면 학교 소개 페이지로 이동해요</p>
+      </div>
+      <div class="legend" style="justify-content:center;padding-bottom:16px">
+        <label class="search" style="margin:0;max-width:360px;width:100%">
+          <span aria-hidden="true">🔍</span>
+          <span class="sr-only">학교 이름 검색</span>
+          <input id="q" type="search" placeholder="학교 이름으로 찾기" autocomplete="off">
+        </label>
+      </div>
+      <div class="groups" id="groups"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="notice">
+        <p><strong>운영교 담당 선생님께</strong> · 홍보 원고 양식을 작성해 보내 주시면 학교 소개 페이지로 만들어 연결해 드려요.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <a class="btn" href="school.html?id=wongok-hs&p=p5">페이지 기본 양식 보기</a>
+          <a class="btn" href="school.html?id=sample-wongok&p=p2">완성 예시 보기 (원곡고)</a>
+          <a class="btn gold" href="form/2026_디지털교육운영교_홍보원고_작성양식.hwpx" download>원고 양식 내려받기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  경기도안산교육지원청 · 2026 안산 디지털 교육 운영교<br>
+  지도 © Kakao (불러오지 못할 때의 간단 지도: 경계 데이터 © OpenStreetMap contributors)
+</footer>
+
+<script src="assets/kakao_key.js?v=20261123b"></script>
+<script src="data/schools.js?v=20261123a"></script>
+<script src="data/mapshapes.js?v=20261123a"></script>
+<script src="data/content/index.js?v=20261123a"></script>
+<script src="assets/common.js?v=20261123a"></script>
+<script src="assets/vmap.js?v=20261123a"></script>
+<script src="assets/kmap.js?v=20261123b"></script>
+<script src="assets/gradient-bg.js?v=20261123a"></script>
+<script>BackgroundGradientAnimation(document.getElementById('hero'), { className: 'hero-content', containerClassName: 'hero-bg' });</script>
+<script src="assets/index.js?v=20261123a"></script>
+</body>
+</html>
